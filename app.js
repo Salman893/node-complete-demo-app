@@ -44,7 +44,7 @@ const fileFilter = (req, file, cb) => {
 
 
 const MONGODB_URI =
-`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.ow333.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`;
+"mongodb+srv://Nodeuser:nodeguide@cluster0.ow333.mongodb.net/aa?retryWrites=true&w=majority"
 
 const store = new MongoDBStore({
     uri: MONGODB_URI,
