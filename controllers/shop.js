@@ -1,6 +1,14 @@
 const Product = require("../models/product");
 
 exports.getIndex = (req, res, next) => {
+  if(!req.user) {
+    const products = [];
+    return res.render("shop/index", {
+      pageTitle: "Shop",
+      path: "index",
+      products: products,
+    });
+  }
   Product.find({userId: req.user._id}).then((products) => {
     res.render("shop/index", {
       pageTitle: "Shop",
