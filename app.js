@@ -92,6 +92,7 @@ app.use((req, res, next) => {
     next();
 })
 
+app.get('/favicon.ico',(req, res, next) => { res.status(402) });
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 app.use(authRoutes);
