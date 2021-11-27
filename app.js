@@ -44,7 +44,7 @@ const fileFilter = (req, file, cb) => {
 
 
 const MONGODB_URI =
-"mongodb+srv://Nodeuser:nodeguide@cluster0.ow333.mongodb.net/webshop?retryWrites=true&w=majority"
+"mongodb+srv://Nodeuser:nodeguide@cluster0.ow333.mongodb.net/aa?retryWrites=true&w=majority"
 
 const store = new MongoDBStore({
     uri: MONGODB_URI,
